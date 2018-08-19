@@ -1,3 +1,5 @@
+library(dplyr)
+
 ## Load and cached text file data 
 ## Return as a data.frame
 ## @param m: inetrnal loaded data.frame cache

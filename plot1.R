@@ -1,3 +1,5 @@
+library(dplyr)
+
 ## Load and cached text file data 
 ## Return as a data.frame
 ## @param m: inetrnal loaded data.frame cache
@@ -24,7 +26,7 @@ cacheData <- function(m = NULL){
       return(0)
     
     # Return the subset
-    return(subset(m, Date >= as.Date(minDate) & Date <= as.Date(maxDate))) 
+    return(subset(m, Date == as.Date(minDate) | Date == as.Date(maxDate))) 
   }
   
   # Read and store data for the internal cached data.frame
