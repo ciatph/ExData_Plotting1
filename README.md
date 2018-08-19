@@ -1,3 +1,8 @@
+# Course Project No. 1
+
+### Module 4: Exploratory Data Analysis
+Course project for Coursera's JHU Data Science's Exploratory Data Analysis course.
+
 ## Introduction
 
 This assignment uses data from
