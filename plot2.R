@@ -43,13 +43,6 @@ cacheData <- function(m = NULL){
     }
   }
   
-  # Convert a string date to class Date
-  convert <- function(x){
-    # return(as.Date(x, format='%d/%m/%Y'))
-    return(as.Date(as.character(x), format="%Y/%m/%d"))
-  }
-  
-  
   # Return methods 
   return(
     list(
