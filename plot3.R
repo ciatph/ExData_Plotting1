@@ -64,7 +64,7 @@ t <- d$getsubset()
 
 # Set-up devices and settings
 png(filename="plot3.png", width=480, height=480, units='px')
-op <- par(mar = rep(2, 4), bg=NA)
+op <- par(mar = c(5,4,2,2), oma=c(0,0,2,0), bg=NA)
 
 # Get unique time per day
 s <- t %>%

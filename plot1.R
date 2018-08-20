@@ -67,7 +67,7 @@ gbp <- as.numeric(t$Global_active_power[t$Global_active_power != '?'])
 
 # Set-up devices and settings
 png(filename="plot1.png", width=480, height=480, units='px')
-op <- par(mar = rep(2, 4), bg=NA)
+op <- par(mar = c(5,4,1,2), oma=c(0,0,2,0), bg=NA)
 
 # Plot the graph and render to PNG
 hist(gbp, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")

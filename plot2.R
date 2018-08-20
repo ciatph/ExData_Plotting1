@@ -67,7 +67,7 @@ gbp <- as.numeric(t$Global_active_power[t$Global_active_power != '?'])
 
 # Set-up devices and settings
 png(filename="plot2.png", width=480, height=480, units='px')
-op <- par(mar = rep(2, 4), bg=NA)
+op <- par(mar = c(5,4,2,2), oma=c(0,0,2,0), bg=NA)
 
 # Get unique time per day
 s <- t %>%
